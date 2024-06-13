@@ -1,0 +1,51 @@
+.header-container {
+    height: 80px;
+    position: relative;
+    padding: 16px;
+    box-sizing: border-box;
+
+    /* background-color: black; */
+}
+
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-bar > a > img {
+    width: 30px;
+    height: 30px;
+}
+
+.logo-box {
+    width: 120px;
+    height: 60px;
+}
+
+.logo-box > a > img {
+    width: 120px;
+    height: 60px;
+}
+
+main {
+    background-image: url(../mac/img/민니_화보_\(4\).jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.main-container {
+
+}
+
+.plus {
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: black;
+    opacity: 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
