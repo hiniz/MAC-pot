@@ -15,7 +15,7 @@
                 <div class="logo-box">
                     <a href="#" class="logo"><img src="../mac/img/logo-w.png" alt="logo-m"></a>
                 </div>
-                <a href="#" class="profile"><img src="../mac/img/profile-w.png" alt="profile"></a>
+                <a href="https://www.maccosmetics.co.kr/sign-in?redirectUrl=%2F%3Futm_medium%3Dpaid_search_brand%26utm_source%3Dnaver%26utm_campaign%3Dmac_brand-awareness%26utm_content%3D0613_jun_prospects_brandsearch_pc_homelink%26utm_term%3D%25EB%25A7%25A5%26n_media%3D27758%26n_query%3D%25EB%25A7%25A5%26n_rank%3D1%26n_ad_group%3Dgrp-a001-04-000000042579689%26n_ad%3Dnad-a001-04-000000306378918%26n_keyword_id%3Dnkw-a001-04-000006256820670%26n_keyword%3D%25EB%25A7%25A5%26n_campaign_type%3D4%26n_contract%3Dtct-a001-04-000000000907239%26n_ad_group_type%3D5%26NaPm%3Dct%253Dlxjvx1e8%257Cci%253D0yW0001g275ALnabhLm2%257Ctr%253Dbrnd%257Chk%253D76006e95b1e1617622dff434e6f916c770c8bb73%257Cnacn%253DoVkgBMQTkKzfB" class="profile"><img src="../mac/img/profile-w.png" alt="profile"></a>
             </div>            
         </div>
     </header>
@@ -26,25 +26,28 @@
                 <img src="../mac/img/+.svg" alt="+">
             </button>
             <div class="main-lip-box">
+                <div class="left-arrow"></div>
                 <div class="lip-box">
                     <div class="lip-box-img">
                         <img src="../mac/img/파우더 키스 벨벳 블러 슬림 스틱.png" alt="벳벳블러슬림스틱">
-                        <div class="lip-box-text">
-                            <p class="name">파우더 키스 벨벳 블러 슬림 스틱</p>
-                            <p class="e-name"> POWDER KISS VELVET BLUR SLIM STICK</p>
-                            <p class="price">44,000원</p>
-                            <p class="sub-content">벨벳 텍스쳐, 무광 블랙 패키지, 블러링 이팩트</p>
-                            <p class="tag-content">#벨벳 #슬림 #무광</p>
-                            <button class="buy">구매하기</button>   
-                            <button class="experience">체험하기</button>
-                        </div>
-                        <div class="left-arrow"></div>
+                    </div>
+                    <div class="lip-box-text">
+                            <p class="font-24">파우더 키스 벨벳 블러 슬림 스틱</p>
+                            <p class="font-16"> POWDER KISS VELVET BLUR SLIM STICK</p>
+                            <p class="font-20">44,000원</p>
+                            <p class="font-16">벨벳 텍스쳐, 무광 블랙 패키지, 블러링 이팩트</p>
+                            <p class="font-16 tag">#벨벳 #슬림 #무광</p>
+                            <div class="button-box">
+                                <button class="button black">구매하기</button>   
+                                <button class="button white">체험하기</button>
+                            </div>
                     </div>
                 </div>
             </div>
+
             <div class="powderkiss">
                 <img src="../mac/img/powderkiss.png" alt="powderkiss">
-                <p>당신이 사랑하는 가볍고 부드러운 포뮬라
+                <p class="font 20">당신이 사랑하는 가볍고 부드러운 포뮬라
                      NEW 파우더 키스 벨벳 블러 슬림 스틱
                     12시간 건조함 없이 촉촉하고 부드러운 파우더 키스를
                     지금 바로 경험해보세요.</p>
@@ -52,21 +55,24 @@
         </div>
     </main>
 
-    <section id="1400">
+    <section id="width-1400">
+
         <div class="new-cushion">
+
             <div class="contents-box">
-                <p class="new">NEW</p>
-                <p class="cushion-name">STUDIO FIX LONGWEAR CUSHION FOUNDATION SPF 50/PA+++</p>
-                <p class="cushion-exposition">
+                <p class="font-24">NEW</p>
+                <p class="font-36">STUDIO FIX LONGWEAR CUSHION FOUNDATION SPF 50/PA+++</p>
+                <p class="font-16">
                     24시간동안 지워지지 않는 초 밀착 FIX
                     새롭게 탄생한 자연스럽고 매끄러운 새틴광 피니시
                     76% 스킨케어 성분이 함유되어 촉촉하고 
                     업그레이드 된 고밀착 더블픽스 퍼프</p>
-                <p class="cushion-exposition">
+                <p class="font-16">
                     피부에 부드럽게 감겨 24시간 지속되는 
                     초경량 + 초밀착 더블픽스 테크놀로지를 경험해보세요.</p>
-                <button class="buy-w">구매하기</button>
+                <button class="button white">구매하기</button>
             </div>
+
             <div class="cushion-img"></div>
             <img src="../mac/img/쿠션-허윤진.jpg" alt="쿠션허윤진">
         </div>
@@ -242,34 +248,83 @@
 
             <div class="mac-mission">
                 <h3>LEARN MORE ABOUT OUR MISSION</h3>
+<!-- 
+                <style>
 
-                <div class="mission-img-box">
-                    <img src="../mac/img/미션1.png" alt="mission1">
-                    <img src="../mac/img/미션2.png" alt="mission2">
-                    <img src="../mac/img/미션3.png" alt="mission3">
-                </div>
+                    .missions-container {
+                        position: relative;
+                        /* 임시값이니 텍스트 컨텐츠로 height를 만들어주세요 */
+                        height: 2000px;
+                    }
+                    .missions{
+                        /* display: flex; */
+                        padding-left: 50% ;
+                        box-sizing: border-box;
+                        /* position: relative; */
+                    }
+                    .mission-img-container {
+                        width: 50%;
+                        height: 100%;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                    .mission-img-container > img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100vh;
+                        position: sticky;
+                        top: 0;
+                        opacity: 1;
+                        transition: 0.5s;
+                    }
 
-                <div class="mission-back-box">
-                    <div class="mission-white">
-                        <h4>여성과 소녀들에게 힘을 실어주기</h4>
-                        <p>맥 비바 글램은 올바른 성교육과 여성과 소녀들의 평등한 권리와 
-                        건강한 미래를 지원하기 위해 지역 단체와 협력합니다.
-                        </p>
+                    .mission-img-container > img.hide {
+                        opacity: 0;
+                    }
+                </style> -->
+
+            <div class="missions-container">
+                <div class="missions">
+                    <div class="mission">
+                        <figure class="mission-img-container">
+                            <img src="../mac/img/미션1.png" alt="mission1">
+                        </figure>
+                        <div class="mission-explane white">
+                            <h4>여성과 소녀들에게 힘을 실어주기</h4>
+                            <p>맥 비바 글램은 올바른 성교육과 여성과 소녀들의 평등한 권리와 
+                            건강한 미래를 지원하기 위해 지역 단체와 협력합니다.
+                            </p>
+                        </div>
                     </div>
-                    <div class="mission-grey">
-                        <h4>LGBTQIA+ 커뮤니티 지원</h4>
-                        <P>맥 비바 글램은 낙인을 없애고 LGBTQIA+ 커뮤니티의 힘을 실어주기 위해
-                            싸우며, 특히 노숙자 LGBTQIA+ 청소년을 위한
-                            지역 단체를 지원합니다.
-                        </P>
+                    <div class="mission">
+                        <figure class="mission-img-container">
+                            <img src="../mac/img/미션2.png" alt="mission2">
+                        </figure>
+                        <div class="mission-explane gray">
+                            <h4>LGBTQIA+ 커뮤니티 지원</h4>
+                            <P>맥 비바 글램은 낙인을 없애고 LGBTQIA+ 커뮤니티의 힘을 실어주기 위해
+                                싸우며, 특히 노숙자 LGBTQIA+ 청소년을 위한
+                                지역 단체를 지원합니다.
+                            </P>
+                        </div>
                     </div>
-                    <div class="mission-white">
-                        <h4>HIV/AIDS 이겨내기</h4>
-                        <P>맥 비바 글램은 VIVA GLAM 립스틱으로 HIV/AIDS를 종식시키겠다는
-                            우리의 사명을 계속 이어가고 있습니다.
-                        </P>
+                    <div class="mission">
+                        <figure class="mission-img-container">
+                            <img src="../mac/img/미션3.png" alt="mission3">
+                        </figure>
+                        <div class="mission-explane white">
+                            <h4>HIV/AIDS 이겨내기</h4>
+                            <P>맥 비바 글램은 VIVA GLAM 립스틱으로 HIV/AIDS를 종식시키겠다는
+                                우리의 사명을 계속 이어가고 있습니다.
+                            </P>
+                        </div>
                     </div>
+
+
+
                 </div>
+            </div>
             </div>
         </div>
     </section>
