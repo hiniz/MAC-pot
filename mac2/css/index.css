@@ -1,0 +1,167 @@
+*{ 
+    font-family: 'suit';
+}
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+button {
+    background: inherit ; border:none; box-shadow:none; border-radius:0; padding:0; overflow:visible; cursor:pointer
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 32px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-box {
+    width: 30px;
+    height: 30px;
+}
+
+
+.logo-box {
+    width: 300px;
+    height: 80px;
+}
+
+/* 헤더 끗 */
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/민니\ 메인.png);
+    background-repeat: no-repeat;
+    background-size: 32% cover;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    color: white;
+}
+
+.plus {
+    position: absolute;
+    left: 657px;
+    top: 485px;
+    display: flex;
+    gap: 34px;
+}
+
+.plus-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #11111190;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.plus-button > img {
+    width: 20px;
+    height: 20px;
+}
+
+.plus-box {
+    width: 620px;
+    height: 300px;
+    background-color: #11111190;
+    position: absolute;
+    left: calc(100% + 32px) ;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 32px;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.left-arrow {
+    border: 20px solid #11111190;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: -40px;
+}
+
+/* ????????????????? */
+
+.plus-lip-img {
+    width: 266px;
+    height: 266px;
+    background-color: #ffffff80;
+}
+
+.plus-box-contents {
+    position: relative;
+}
+
+.plus-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.plus-tag-box {
+    display: flex;
+    gap: 10px;
+}
+
+.plus-contents-button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 12px;
+}
+
+.button {
+    width: 80px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 50px;
+    padding: 6px 16px;
+    box-sizing: border-box;
+}
+
+.black {
+    background-color: #222;
+    color: white;
+}
+
+.main-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 32px;
+    bottom: 32px;
+}
+
+.main-contents-img {
+    width: 434px;
+    height: 120px;
+    margin-bottom: 20px;
+}
+

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: suit;
+    src: url(../font/suit/SUIT-Medium.ttf);
+}
+
+@font-face {
+    font-family: suit-bold;
+    src: url(../font/suit/SUIT-Bold.ttf);
+}
+
+@font-face {
+    font-family: suit-heavy;
+    src: url(../font/suit/SUIT-Heavy.ttf);
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.bold{
+    font-family: 'suit-bold';
+}
