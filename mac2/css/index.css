@@ -110,7 +110,7 @@ main {
 .plus-lip-img {
     width: 266px;
     height: 266px;
-    background-color: #ffffff80;
+    background-color: #ffffff98;
 }
 
 .plus-box-contents {
@@ -165,3 +165,46 @@ main {
     margin-bottom: 20px;
 }
 
+/* 메인 끗~~ */
+
+
+#background-black {
+    background-color: black;
+    color: white;
+}
+
+.section-container-1400 {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.longwear-cushion-container {
+    display: flex;
+    gap: 128px;
+    align-items: center;
+    padding: 46px 0;
+    box-sizing: border-box;
+}
+
+.longwear-cushion-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 39px;
+}
+
+.studio {
+    margin-bottom: 50px;
+}
+
+.fix {
+    margin-bottom: 45px;
+}
+
+.longwear-cushion-contents > button {
+    margin-top: 110px;
+}
+
+.longwear-img {
+    width: 690px;
+    height: 860px;
+}
