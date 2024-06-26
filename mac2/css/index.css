@@ -192,6 +192,10 @@ main {
     gap: 39px;
 }
 
+.longwear-cushion-contents > p {
+    line-height: 120%;
+}
+
 .studio {
     margin-bottom: 50px;
 }
@@ -207,4 +211,183 @@ main {
 .longwear-img {
     width: 690px;
     height: 860px;
+}
+
+.finder-container {
+    width: 100%;
+    height: 960px;
+    display: flex;
+    align-items: center;
+    gap: 110px;
+    padding: 46px 0;
+    box-sizing: border-box;
+}
+
+.finder-img {
+    width: 668px;
+    height: 860px;
+}
+
+.finder-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 118px;
+    align-items: center;
+}
+
+.finder-title{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+
+.finder-moving-img{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+}
+
+.skin {
+    width: 98px;
+}
+
+.moisture {
+    width: 74px;
+}
+
+.skin-type {
+    width: 138px;
+    height: 138px;
+}
+
+#background-white {
+    background-color: white;
+}
+
+.bestseller-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 960px;
+    padding: 73px 0;
+    box-sizing: border-box;
+}
+
+.new-or-best {
+    color: #bbb;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+}
+
+.lip-skin {
+    color: #bbb;
+    display: flex;
+    gap: 68px;
+    margin-bottom: 56px;
+}
+
+.best-products-container {
+    display: flex;
+    gap: 20px;
+}
+
+.best-products-contents {
+    position: relative;
+}
+
+.best-products-color{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+}
+
+.best-products {
+    width: 334px;
+    height: 297px;
+    background-color: #f2f2f2;
+    margin-bottom: 23px;
+}
+
+.best-products-text{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.e-title {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.sub-text {
+    color: #333;
+    margin-top: 20px;
+}
+
+.slider {
+    margin-top: 125px;
+    background-color: #d9d9d9;
+    width: 1400px;
+    height: 1px;
+}
+
+.slider-point {
+    width: 226px;
+    height: 1px;
+    background-color: #434343;
+}
+
+.trend-container {
+    width: 100%;
+    height: 960px;
+    padding: 71px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trend-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 98px;
+}
+
+.trend-contents {
+    display: flex;
+}
+
+.trend-img {
+    width: 480px;
+    height: 642px;
+}
+
+.trend-text-box {
+    width: 480px;
+    height: 642px;
+    background-color: #111;
+    padding: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.trend-text-box > h3 {
+    margin-bottom: 44px;
+}
+
+.trend-text-box > p {
+    margin-bottom: 28px;
+    line-height: 120%;
+}
+
+.big-button {
+    width: 130px;
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
 }
