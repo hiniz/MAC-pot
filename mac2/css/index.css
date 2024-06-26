@@ -391,3 +391,33 @@ main {
     right: 50px;
     bottom: 50px;
 }
+
+
+/*  비바비바  */
+
+.vivaglam {
+    height: 960px;
+    background-image: url(../img/vivaglam.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.vivaglam-contetns {
+    height: 508px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vivaglam-contetns > h2 {
+    margin-bottom: 210px;
+}
+
+.vivaglam-contetns > p {
+    margin-bottom: 62px;
+    text-align: center;
+}
