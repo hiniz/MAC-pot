@@ -36,12 +36,20 @@
     font-size: 36px;
 }
 
+.font-40 {
+    font-size: 40px;
+}
+
 .font-50 {
     font-size: 50px;
 }
 
 .font-56 {
     font-size: 56px;
+}
+
+.font-72 {
+    font-size: 72px;
 }
 
 .bold{

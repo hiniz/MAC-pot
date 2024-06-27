@@ -102,7 +102,7 @@ main {
     border: 20px solid transparent;
     width: 0;
     height: 0;
-    border-right: #11111190;
+    border-right-color: #11111190;
     position: absolute;
 }
 
