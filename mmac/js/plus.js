@@ -1,4 +1,4 @@
-const plusButton = document.querySelector('.plus');
+const plusButton = document.querySelector('.plus-button');
 
 console.log(plusButton)
 
