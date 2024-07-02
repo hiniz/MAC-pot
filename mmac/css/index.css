@@ -30,12 +30,13 @@ header{
 }
 
 main{
-    /* padding: 40px;
-    box-sizing: border-box; */
+    width: 100%;
+    padding: 40px;
+    box-sizing: border-box;
     background-image: url(../img/민니_화보_\(4\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 32% cover;
+    background-position: 32% center;
     color: white;
 }
 
@@ -78,6 +79,10 @@ main{
     gap: 20px;
     padding: 16px;
     box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
 }
 
 .left-arrow{
@@ -221,11 +226,24 @@ main{
     gap: 60px;
     margin-top: 120px;
     margin-bottom: 140px;
+    overflow: hidden;
 }
 
 .skin-type{
     width: 130px;
     height: 130px;
+    animation: finder 20s linear infinite;
+}
+
+@keyframes finder {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(-100%);
+    }
+    
 }
 
 .finder-contents > button{
@@ -335,11 +353,11 @@ main{
 .trend-contents{
     display: flex;
     height: 643px;
+    position: relative;
 }
 
 .trend-img{
     width: 480px;
-
 }
 
 .trend-box{
