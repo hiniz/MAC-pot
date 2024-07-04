@@ -110,10 +110,16 @@
                         <p class="font-32">당신의 피부타입에 맞는 파운데이션은?</p>
                     </div>
                     <div class="finder-moving">
-                        <figure class="skin-type"><img src="../img/건조.png" alt="건조"></figure>
-                        <figure class="skin-type"><img src="../img/수분.png" alt="수분"></figure>
-                        <figure class="skin-type"><img src="../img/밸런스.png" alt="밸런스"></figure>
-                        <figure class="skin-type"><img src="../img/복합성.png" alt="복합성"></figure>
+                        <div class="moving-container">
+                            <figure class="skin-type"><img src="../img/건조.png" alt="건조"></figure>
+                            <figure class="skin-type"><img src="../img/수분.png" alt="수분"></figure>
+                            <figure class="skin-type"><img src="../img/밸런스.png" alt="밸런스"></figure>
+                            <figure class="skin-type"><img src="../img/복합성.png" alt="복합성"></figure>
+                            <figure class="skin-type"><img src="../img/건조.png" alt="건조"></figure>
+                            <figure class="skin-type"><img src="../img/수분.png" alt="수분"></figure>
+                            <figure class="skin-type"><img src="../img/밸런스.png" alt="밸런스"></figure>
+                            <figure class="skin-type"><img src="../img/복합성.png" alt="복합성"></figure>
+                        </div>
                     </div>
                     <p>4가지 질문으로 알아보는 나와 꼭 맞는 파운데이션 테스트</p>
                     <button class="button">시작하기</button>
@@ -129,7 +135,7 @@
             
             <div class="bestseller">
                 <div class="new-or-best">
-                    <h2 class="new font-36 heavy">NEW ARRIVALS</h2>
+                    <h2 id="new-arrivals" class="new font-36 heavy">NEW ARRIVALS</h2>
                     <h2 class="best font-36 heavy">BEST SELLERS</h2>
                 </div>
                 <div class="products-list">
@@ -227,34 +233,41 @@
                 <p class="font-20">m·a·c Trend</p>
                 <h2 class="font-32 heavy">M·A·C에서 분석한 2024 메이크업 트렌드</h2>
             </div>
-            <div class="trend-contents">
-                <figure class="trend-img">
-                    <img src="../img/understatement.png" alt="understatement">
-                </figure>
-                <div class="trend-box">
-                    <h2 class="font-32 bold">#UNDERSTATEMENT</h2>
-                    <div class="trend-text">
-                        <p class="font-16 bold">매끄럽고 탄탄한 피부결 케어로 <br>
-                            색조를 덜어내고 음영을 더해주는 메이크업</p>
-                        <p class="font-16 bold">맥만의 커넥트 인 컬러 아이 섀도우 팔레트를 <br>
-                            이용하여 웜/쿨 상관 없이 누구에게나 <br>
-                            어울리는 데일리 메이크업을 만나보세요.</p>  
+
+
+            <div class="trend-contents-container">
+                <div class="trend-contents">
+                    <figure class="trend-img">
+                        <img src="../img/understatement.png" alt="understatement">
+                    </figure>
+                    <div class="trend-box">
+                        <h2 class="font-32 bold">#UNDERSTATEMENT</h2>
+                        <div class="trend-text">
+                            <p class="font-16 bold">매끄럽고 탄탄한 피부결 케어로 <br>
+                                색조를 덜어내고 음영을 더해주는 메이크업</p>
+                            <p class="font-16 bold">맥만의 커넥트 인 컬러 아이 섀도우 팔레트를 <br>
+                                이용하여 웜/쿨 상관 없이 누구에게나 <br>
+                                어울리는 데일리 메이크업을 만나보세요.</p>  
+                        </div>
+                        <button class="button">메이크업 보러가기</button>
                     </div>
-                    <button class="button">메이크업 보러가기</button>
                 </div>
-                <figure class="trend-img">
-                    <img src="../img/apricotmakeup.png" alt="understatement">
-                </figure>
-                <div class="trend-box">
-                    <h2 class="font-32 bold">#APRICOTMAKEUP</h2>
-                    <div class="trend-text">
-                        <p class="font-16 bold">잘 익은 살구를 베어먹은 듯한 <br>
-                            은은한듯 화려한 광채 메이크업</p>
-                        <p class="font-16 bold">통통 튀는 네온 패키지로 돌아온 <br>
-                            팝 플럼퍼 스쿼트 플럼핑 글로스 스틱으로 <br>
-                            반짝반짝 빛나는 탕후루립을 만나보세요.</p>  
+
+                <div class="trend-contents">
+                    <figure class="trend-img">
+                        <img src="../img/apricotmakeup.png" alt="understatement">
+                    </figure>
+                    <div class="trend-box">
+                        <h2 class="font-32 bold">#APRICOTMAKEUP</h2>
+                        <div class="trend-text">
+                            <p class="font-16 bold">잘 익은 살구를 베어먹은 듯한 <br>
+                                은은한듯 화려한 광채 메이크업</p>
+                            <p class="font-16 bold">통통 튀는 네온 패키지로 돌아온 <br>
+                                팝 플럼퍼 스쿼트 플럼핑 글로스 스틱으로 <br>
+                                반짝반짝 빛나는 탕후루립을 만나보세요.</p>  
+                        </div>
+                        <button class="button">메이크업 보러가기</button>
                     </div>
-                    <button class="button">메이크업 보러가기</button>
                 </div>
             </div>
         </div>
@@ -277,5 +290,6 @@
     
     <script src="../js/plus.js"></script>
     <script src="../js/scroll.js"></script>
+    <script src="../js/click.js"></script>
 </body>
 </html>

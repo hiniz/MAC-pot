@@ -1,7 +1,7 @@
 img{
     width: 100%;
-    height: 100%;
     display: block;
+    object-fit: contain;
 }
 
 header{
@@ -192,6 +192,12 @@ main{
 .longwear-img{
     width: 690px;
     height: 868px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.visible {
+    opacity: 1;
 }
 
 .finder{
@@ -211,6 +217,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 50%;
 }
 
 .finder-title{
@@ -221,27 +228,36 @@ main{
 }
 
 .finder-moving{
-    display: flex;
-    justify-content: space-between;
-    gap: 60px;
     margin-top: 120px;
     margin-bottom: 140px;
+    width: 100%;
     overflow: hidden;
+}
+
+.moving-container {
+    display: flex;
+    width: calc(100% * 2);
+    flex-shrink: 0;
+    animation: finder 10s linear infinite;
 }
 
 .skin-type{
     width: 130px;
     height: 130px;
-    animation: finder 20s linear infinite;
+    margin-right: 56px;
+}
+
+.skin-type > img {
+    height: 100%;
 }
 
 @keyframes finder {
     0%{
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 
     100%{
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
     
 }
@@ -348,6 +364,10 @@ main{
     gap: 10px;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.trend-contents-container{
+    display: flex;
 }
 
 .trend-contents{

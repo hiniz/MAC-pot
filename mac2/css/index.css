@@ -50,7 +50,9 @@ main {
     height: 100vh;
     background-image: url(../img/민니\ 메인.png);
     background-repeat: no-repeat;
-    background-size: 32% cover;
+    background-size: cover;
+    background-position: 32% center;
+    
 }
 
 .main-container {
@@ -629,6 +631,14 @@ main {
 
 .qr-box {
     display: flex;
+}
+
+.qr-box > button {
+    margin-right: 40px;
+}
+
+.hidden{
+    display: none;
 }
 
 .qr-background {

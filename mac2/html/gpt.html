@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>스크롤로 이미지 나타내기</title>
+<style>
+    body {
+        height: 2000px; /* 예시를 위해 body의 높이를 길게 설정 */
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        width: 400px; /* 박스의 너비 */
+        height: 300px; /* 박스의 높이 */
+        background-color: #f0f0f0;
+        margin: 100px auto; /* 가운데 정렬을 위한 마진 */
+        position: relative; /* 포지션 설정 */
+        overflow: hidden; /* 오버플로우 제어 */
+    }
+
+    .image-container {
+        position: absolute; /* 포지션 설정 */
+        top: 0;
+        left: -100%; /* 초기에 왼쪽 밖으로 숨김 */
+        transition: left 0.5s ease; /* 왼쪽 이동 트랜지션 */
+    }
+
+    .box.active .image-container {
+        left: 0; /* 활성화 상태일 때 왼쪽으로 이동하여 보이게 함 */
+    }
+</style>
+</head>
+<body>
+    <div class="box" id="box">
+        <div class="image-container">
+            <img src="your-image.jpg" alt="이미지">
+        </div>
+    </div>
+
+    <script>
+        var box = document.getElementById('box');
+        var imageContainer = box.querySelector('.image-container');
+        var isVisible = false; // 초기에는 이미지가 보이지 않는 상태
+
+        // 스크롤 이벤트 리스너 추가
+        window.addEventListener('scroll', function() {
+            var rect = box.getBoundingClientRect();
+            var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+            var windowBottom = window.scrollY + windowHeight;
+
+            // 박스가 화면에 나타날 조건을 설정합니다.
+            if (rect.top < windowBottom && rect.bottom >= 0) {
+                // 이미지가 보이는 상태이면 active 클래스를 추가합니다.
+                if (!isVisible) {
+                    box.classList.add('active');
+                    isVisible = true;
+                }
+            } else {
+                // 이미지가 화면 밖으로 벗어나면 active 클래스를 제거하고 isVisible을 false로 설정합니다.
+                box.classList.remove('active');
+                isVisible = false;
+            }
+        });
+    </script>
+</body>
+</html>
